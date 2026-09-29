@@ -214,6 +214,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .role i { color: var(--accent); }
 .role .sep { color: var(--accent); }
+.roles { display: flex; flex-wrap: wrap; gap: 8px; }
+.roles li {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 12px;
+  font-family: var(--display); font-size: 1rem; font-weight: 600; color: var(--text);
+  background: rgba(148, 163, 184, 0.06); border: 1px solid var(--border-strong);
+}
+.roles li i { color: var(--accent); }
+.roles li.on { background: var(--accent); border-color: var(--accent); color: #031018; }
+.roles li.on i { color: #031018; }
 .lead { font-size: 1.05rem; max-width: 60ch; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 
